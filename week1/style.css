@@ -1,0 +1,15 @@
+nav ul li a {
+  display: block;
+  padding: 0.85rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+    font-size: 45px;
+    text-align: center;
+}
