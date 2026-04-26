@@ -1,0 +1,68 @@
+/* ── Reset & Base ─────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6B0000 0%, #8B0000 40%, #C8960C 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ── Header ───────────────────────────── */
+header {
+  padding: 1.5rem 2rem 1rem;
+  position: relative;
+}
+
+header h1 {
+  color: #FFD700;
+  font-size: 1.8rem;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.25rem;
+  padding-right: 80px; /* keeps title from overlapping the logo */
+}
+
+/* ── Smash Ball Logo ──────────────────── */
+nav img {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* ── Nav list → card grid ─────────────── */
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 14px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.85rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #FFE566;
+  font-weight: 600;
+  font-size: 1rem;
+
+  background: rgba(255, 215, 0, 0.12);
+  border: 1.5px solid rgba(255, 215, 0, 0.45);
+  border-radius: 10px;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease,
+              background 0.2s ease;
+}
+
+nav ul li a:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 215, 0, 0.28);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
